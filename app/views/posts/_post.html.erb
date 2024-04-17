@@ -1,12 +1,12 @@
-<div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
+<div class="flex flex-col border border-gray-300 rounded p-4">
+  <div id="<%= dom_id post %>" class="w-full">
+    <h2 class="text-2xl">
+      <%= post.title %>
+    </h2>
 
-  <p>
-    <strong>Content:</strong>
-    <%= post.content %>
-  </p>
+    <p>
+      <%= post.content %>
+    </p>
 
+  </div>
 </div>
