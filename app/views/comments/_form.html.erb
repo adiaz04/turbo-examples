@@ -1,12 +1,10 @@
-<%= turbo_frame_tag "new_comment" do %>
-  <div class="flex flex-col gap-2 w-full">
-    <%= form_with(model: [@post, @post.comments.build], local: true) do |form| %>
-      <p class="w-full">
-        <%= form.text_area :content, class: "w-full" %>
-      </p>
-      <p class="flex justify-end">
-        <%= form.submit "Add Comment" %>
-      </p>
-    <% end %>
-  </div>
-<% end %>
+<div class="flex flex-col gap-2 w-full">
+  <%= form_with(model: [@post, @post.comments.build], local: true) do |form| %>
+    <p class="w-full">
+      <%= form.text_area :content, class: "w-full" %>
+    </p>
+    <p class="flex justify-end">
+      <%= form.submit "Add Comment" %>
+    </p>
+  <% end %>
+</div>
